@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="30dp">
+
+                <TableRow style="@style/tableRow">
+
+                    <ImageButton
+                        android:id="@+id/tema1"
+                        style="@style/buttonPrimary"
+                        app:srcCompat="@drawable/tema1_button" />
+
+                    <ImageButton
+                        android:id="@+id/tema2"
+                        style="@style/buttonPrimary"
+                        app:srcCompat="@drawable/tema1_button" />
+
+                </TableRow>
+
+                <TableRow style="@style/tableRow">
+
+                    <ImageButton
+                        android:id="@+id/tema3"
+                        style="@style/buttonPrimary"
+                        app:srcCompat="@drawable/tema2_button" />
+
+                    <ImageButton
+                        android:id="@+id/tema4"
+                        style="@style/buttonPrimary"
+                        app:srcCompat="@drawable/tema4_button" />
+
+                </TableRow>
+
+                <TableRow style="@style/tableRow">
+
+                    <ImageButton
+                        android:id="@+id/tema5"
+                        style="@style/buttonPrimary"
+                        app:srcCompat="@drawable/tema5_button" />
+
+                    <ImageButton
+                        android:id="@+id/tema6"
+                        style="@style/buttonPrimary"
+                        app:srcCompat="@drawable/tema6_button" />
+
+                </TableRow>
+
+                <TableRow style="@style/tableRow">
+
+                    <ImageButton
+                        android:id="@+id/tema7"
+                        style="@style/buttonPrimary"
+                        app:srcCompat="@drawable/tema7_button" />
+
+                    <ImageButton
+                        android:id="@+id/tema8"
+                        style="@style/buttonPrimary"
+                        app:srcCompat="@drawable/tema8_button" />
+
+                </TableRow>
+
+
+                <TableRow style="@style/tableRow">
+
+                    <ImageButton
+                        android:id="@+id/tema9"
+                        style="@style/buttonPrimary"
+                        app:srcCompat="@drawable/tema9_button" />
+
+                    <ImageButton
+                        android:id="@+id/tema10"
+                        style="@style/buttonPrimary"
+                        app:srcCompat="@drawable/tema10_button" />
+
+                </TableRow>
+
+                <TableRow style="@style/tableRow">
+
+                    <ImageButton
+                        android:id="@+id/tema11"
+                        style="@style/buttonPrimary"
+                        app:srcCompat="@drawable/tema11_button" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
