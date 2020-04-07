@@ -1,25 +1,50 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name = "general">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name = "android:background">@color/background</item>
+    </style>
+
     <style name = "buttonPrimary">
         <item name = "android:layout_width">wrap_content</item>
         <item name = "android:layout_height">wrap_content</item>
-        <item name = "android:background">@color/white</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:padding">25dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+
+        <item name ="android:background">@color/background</item>
+
     </style>
 
     <style name = "tableRow">
+        <item name = "android:background">@color/background</item>
         <item name = "android:paddingTop">20dp</item>
         <item name = "android:paddingBottom">20dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
+
+    </style>
+
+    <style name ="textPrimary">
+        <item name = "android:layout_marginStart" tools:targetApi="jelly_bean_mr1">30dp</item>
+        <item name = "android:textColor">@color/textColor</item>
+        <item name = "android:layout_width">140dp</item>
+        <item name = "android:layout_height">wrap_content</item>
+        <item name = "android:textSize">30dp</item>
+
+        <item name = "android:textStyle">bold</item>
+
+
     </style>
 </resources>

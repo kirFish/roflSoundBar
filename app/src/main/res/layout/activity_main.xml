@@ -1,105 +1,447 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
+
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical" >
 
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingTop="30dp">
+            <TableLayout style="@style/general"
+                >
 
                 <TableRow style="@style/tableRow">
 
-                    <ImageButton
-                        android:id="@+id/tema1"
-                        style="@style/buttonPrimary"
-                        app:srcCompat="@drawable/tema1_button" />
+                    <RelativeLayout style="@style/general">
 
-                    <ImageButton
-                        android:id="@+id/tema2"
-                        style="@style/buttonPrimary"
-                        app:srcCompat="@drawable/tema1_button" />
+                        <ImageButton
+                            android:id="@+id/temaB1"
+                            style="@style/buttonPrimary"
+                            app:srcCompat="@drawable/tema1_button"
+                            />
 
-                </TableRow>
+                        <TextView
+                            android:id="@+id/tema1"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB1"
+                            android:layout_marginLeft="30dp"
+                            android:text="TextView" />
 
-                <TableRow style="@style/tableRow">
+                        <ImageButton
+                            android:id="@+id/temaB2"
+                            style="@style/buttonPrimary"
+                            android:layout_toRightOf="@+id/temaB1"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginStart="30dp"
+                            app:srcCompat="@drawable/tema2_button" />
 
-                    <ImageButton
-                        android:id="@+id/tema3"
-                        style="@style/buttonPrimary"
-                        app:srcCompat="@drawable/tema2_button" />
-
-                    <ImageButton
-                        android:id="@+id/tema4"
-                        style="@style/buttonPrimary"
-                        app:srcCompat="@drawable/tema4_button" />
-
-                </TableRow>
-
-                <TableRow style="@style/tableRow">
-
-                    <ImageButton
-                        android:id="@+id/tema5"
-                        style="@style/buttonPrimary"
-                        app:srcCompat="@drawable/tema5_button" />
-
-                    <ImageButton
-                        android:id="@+id/tema6"
-                        style="@style/buttonPrimary"
-                        app:srcCompat="@drawable/tema6_button" />
-
-                </TableRow>
-
-                <TableRow style="@style/tableRow">
-
-                    <ImageButton
-                        android:id="@+id/tema7"
-                        style="@style/buttonPrimary"
-                        app:srcCompat="@drawable/tema7_button" />
-
-                    <ImageButton
-                        android:id="@+id/tema8"
-                        style="@style/buttonPrimary"
-                        app:srcCompat="@drawable/tema8_button" />
+                        <TextView
+                            android:id="@+id/tema2"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB2"
+                            android:layout_marginLeft="60dp"
+                            android:layout_toRightOf="@+id/tema1"
+                            android:layout_marginStart="65dp"
+                            android:text="TextView"/>
+                    </RelativeLayout>
 
                 </TableRow>
 
 
                 <TableRow style="@style/tableRow">
 
-                    <ImageButton
-                        android:id="@+id/tema9"
-                        style="@style/buttonPrimary"
-                        app:srcCompat="@drawable/tema9_button" />
+                    <RelativeLayout style="@style/general">
 
-                    <ImageButton
-                        android:id="@+id/tema10"
-                        style="@style/buttonPrimary"
-                        app:srcCompat="@drawable/tema10_button" />
+                        <ImageButton
+                            android:id="@+id/temaB3"
+                            style="@style/buttonPrimary"
+                            app:srcCompat="@drawable/tema3_button" />
+
+                        <TextView
+                            android:id="@+id/tema3"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB3"
+                            android:layout_marginLeft="30dp"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/temaB4"
+                            style="@style/buttonPrimary"
+                            android:layout_toRightOf="@+id/temaB3"
+                            android:layout_marginStart="30dp"
+                            app:srcCompat="@drawable/tema4_button" />
+
+                        <TextView
+                            android:id="@+id/tema4"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB4"
+                            android:layout_marginStart="65dp"
+                            android:layout_toRightOf="@+id/tema3"
+                             />
+                    </RelativeLayout>
 
                 </TableRow>
 
+
                 <TableRow style="@style/tableRow">
 
-                    <ImageButton
-                        android:id="@+id/tema11"
-                        style="@style/buttonPrimary"
-                        app:srcCompat="@drawable/tema11_button" />
+                    <RelativeLayout style="@style/general">
 
+                        <ImageButton
+                            android:id="@+id/temaB5"
+                            style="@style/buttonPrimary"
+                            app:srcCompat="@drawable/tema5_button" />
+
+                        <TextView
+                            android:id="@+id/tema5"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB5"
+                            android:layout_marginLeft="30dp"
+                             />
+
+                        <ImageButton
+                            android:id="@+id/temaB6"
+                            style="@style/buttonPrimary"
+                            android:layout_toRightOf="@+id/temaB5"
+                            app:srcCompat="@drawable/tema6_button"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginRight="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tema6"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB6"
+                            android:layout_marginStart="65dp"
+                            android:layout_toRightOf="@+id/tema5"
+                            />
+                    </RelativeLayout>
+
+                </TableRow>
+
+
+                <TableRow style="@style/tableRow">
+
+                    <RelativeLayout style="@style/general">
+
+                        <ImageButton
+                            android:id="@+id/temaB7"
+                            style="@style/buttonPrimary"
+                            app:srcCompat="@drawable/tema7_button" />
+
+                        <TextView
+                            android:id="@+id/tema7"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB7"
+                            android:layout_marginLeft="30dp"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/temaB8"
+                            style="@style/buttonPrimary"
+                            android:layout_toRightOf="@+id/temaB7"
+                            app:srcCompat="@drawable/tema8_button"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginRight="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tema8"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB8"
+                            android:layout_marginStart="65dp"
+
+                            android:layout_toRightOf="@+id/tema7"
+                             />
+                    </RelativeLayout>
+
+                </TableRow>
+
+
+                <TableRow style="@style/tableRow">
+
+                    <RelativeLayout style="@style/general">
+
+                        <ImageButton
+                            android:id="@+id/temaB9"
+                            style="@style/buttonPrimary"
+                            app:srcCompat="@drawable/tema9_button" />
+
+                        <TextView
+                            android:id="@+id/tema9"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB9"
+                            android:layout_marginLeft="30dp"
+                             />
+
+                        <ImageButton
+                            android:id="@+id/temaB10"
+                            style="@style/buttonPrimary"
+                            android:layout_toRightOf="@+id/temaB9"
+                            app:srcCompat="@drawable/tema10_button"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginRight="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tema10"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB10"
+                            android:layout_marginStart="65dp"
+                            android:layout_toRightOf="@+id/tema9" />
+                    </RelativeLayout>
+
+                </TableRow>
+
+
+                <TableRow style="@style/tableRow">
+
+                    <RelativeLayout style="@style/general">
+
+                        <ImageButton
+                            android:id="@+id/temaB11"
+                            style="@style/buttonPrimary"
+                            app:srcCompat="@drawable/tema1_button" />
+
+                        <TextView
+                            android:id="@+id/tema11"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB11"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginStart="30dp" />
+
+                        <ImageButton
+                            android:id="@+id/temaB12"
+                            style="@style/buttonPrimary"
+                            android:layout_toRightOf="@+id/temaB11"
+                            app:srcCompat="@drawable/tema2_button"
+                            android:layout_marginRight="20dp"
+                            android:layout_toEndOf="@+id/temaB11"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginStart="30dp"/>
+
+                        <TextView
+                            android:id="@+id/tema12"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB12"
+                            android:layout_marginStart="65dp"
+
+                            android:layout_toRightOf="@+id/tema11"
+                             />
+                    </RelativeLayout>
+
+                </TableRow>
+
+
+                <TableRow style="@style/tableRow">
+
+                    <RelativeLayout style="@style/general">
+
+                        <ImageButton
+                            android:id="@+id/temaB13"
+                            style="@style/buttonPrimary"
+                            app:srcCompat="@drawable/tema3_button" />
+
+                        <TextView
+                            android:id="@+id/tema13"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB13"
+                            android:layout_marginLeft="30dp"
+                             />
+
+                        <ImageButton
+                            android:id="@+id/temaB14"
+                            style="@style/buttonPrimary"
+                            android:layout_toRightOf="@+id/temaB13"
+                            app:srcCompat="@drawable/tema4_button"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginStart="30dp"/>
+
+                        <TextView
+                            android:id="@+id/tema14"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB14"
+                            android:layout_marginStart="65dp"
+                            android:layout_toRightOf="@+id/tema13"
+                             />
+                    </RelativeLayout>
+
+                </TableRow>
+
+
+                <TableRow style="@style/tableRow">
+
+                    <RelativeLayout style="@style/general">
+
+                        <ImageButton
+                            android:id="@+id/temaB15"
+                            style="@style/buttonPrimary"
+                            app:srcCompat="@drawable/tema5_button" />
+
+                        <TextView
+                            android:id="@+id/tema15"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB15"
+                            android:layout_marginLeft="30dp"
+                             />
+
+                        <ImageButton
+                            android:id="@+id/temaB16"
+                            style="@style/buttonPrimary"
+                            android:layout_toRightOf="@+id/temaB15"
+                            app:srcCompat="@drawable/tema6_button"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginStart="30dp"/>
+
+                        <TextView
+                            android:id="@+id/tema16"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB16"
+                            android:layout_marginStart="65dp"
+                            android:layout_toRightOf="@+id/tema15"
+                             />
+                    </RelativeLayout>
+
+                </TableRow>
+
+
+                <TableRow style="@style/tableRow">
+
+                    <RelativeLayout style="@style/general">
+
+                        <ImageButton
+                            android:id="@+id/temaB17"
+                            style="@style/buttonPrimary"
+                            app:srcCompat="@drawable/tema7_button" />
+
+                        <TextView
+                            android:id="@+id/tema17"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB17"
+                            android:layout_marginLeft="30dp"
+                             />
+
+                        <ImageButton
+                            android:id="@+id/temaB18"
+                            style="@style/buttonPrimary"
+                            android:layout_toRightOf="@+id/temaB17"
+                            app:srcCompat="@drawable/tema8_button"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginStart="30dp"/>
+
+                        <TextView
+                            android:id="@+id/tema18"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB18"
+                            android:layout_marginStart="65dp"
+
+
+                            android:layout_toRightOf="@+id/tema17"
+                             />
+                    </RelativeLayout>
+
+                </TableRow>
+
+
+                <TableRow style="@style/tableRow">
+
+                    <RelativeLayout style="@style/general">
+
+                        <ImageButton
+                            android:id="@+id/temaB19"
+                            style="@style/buttonPrimary"
+                            app:srcCompat="@drawable/tema9_button" />
+
+                        <TextView
+                            android:id="@+id/tema19"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB19"
+                            android:layout_marginLeft="30dp"
+                             />
+
+                        <ImageButton
+                            android:id="@+id/temaB20"
+                            style="@style/buttonPrimary"
+                            android:layout_toRightOf="@+id/tema19"
+                            app:srcCompat="@drawable/tema10_button"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginStart="30dp"/>
+
+                        <TextView
+                            android:id="@+id/tema20"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB20"
+                            android:layout_marginStart="65dp"
+
+                            android:layout_toRightOf="@+id/tema19"
+                             />
+                    </RelativeLayout>
+
+                </TableRow>
+
+
+                <TableRow style="@style/tableRow">
+
+                    <RelativeLayout style="@style/general">
+
+                        <ImageButton
+                            android:id="@+id/temaB21"
+                            style="@style/buttonPrimary"
+                            app:srcCompat="@drawable/tema1_button" />
+
+                        <TextView
+                            android:id="@+id/tema21"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB21"
+                            android:layout_marginLeft="30dp"
+                             />
+
+                        <ImageButton
+                            android:id="@+id/temaB22"
+                            style="@style/buttonPrimary"
+                            android:layout_toRightOf="@+id/temaB21"
+                            app:srcCompat="@drawable/tema2_button"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginStart="30dp"/>
+
+                        <TextView
+                            android:id="@+id/tema22"
+                            style="@style/textPrimary"
+                            android:layout_below="@+id/temaB22"
+                            android:layout_marginStart="65dp"
+
+                            android:layout_toRightOf="@+id/tema21"
+                             />
+                    </RelativeLayout>
+
+                </TableRow>
+
+
+                <TableRow style="@style/tableRow">
+
+                    <RelativeLayout style="@style/general">
+
+                        <ImageButton
+                            android:id="@+id/temaB23"
+                            style="@style/buttonPrimary"
+                            app:srcCompat="@drawable/tema3_button" />
+
+                        <TextView
+                            android:id="@+id/tema23"
+                            style="@style/textPrimary"
+
+                            android:layout_below="@+id/temaB23"
+                            android:layout_marginLeft="30dp"
+                            android:text="TextView" />
+
+
+                    </RelativeLayout>
 
                 </TableRow>
 
