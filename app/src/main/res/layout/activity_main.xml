@@ -16,8 +16,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <TableLayout style="@style/general"
-                >
+            <TableLayout style="@style/general">
 
                 <TableRow style="@style/tableRow">
 
