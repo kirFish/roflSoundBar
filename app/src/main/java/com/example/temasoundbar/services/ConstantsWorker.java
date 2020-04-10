@@ -17,7 +17,7 @@ public class ConstantsWorker {
             "so listen.m4a", "stupid cheater.m4a", "surrender.m4a",
             "tablyatski awaper.m4a", "ta yopto.m4a", "this is shit not a solution.m4a",
             "try rust.m4a", "understood.m4a", "what the fuck motherfucker.m4a",
-            "ya poshel.m4a", "yes ye syes.m4a", "you bledina.m4a",
+            "ya poshel.m4a", "yes yes yes.m4a", "you bledina.m4a",
             "you cant divide.m4a", "you were told to go.m4a", "you were told to go.m4a"};
 
 
@@ -28,7 +28,7 @@ public class ConstantsWorker {
         for (int i = 0; i < buttonsNumber; i++) {
             editedNames[i] = buttonsNames[i].replace(".m4a","");
         }
-        return buttonsNames;
+        return editedNames;
     }
 
     private static int[] getId(int i) {
