@@ -1,5 +1,6 @@
 package com.example.temasoundbar.adapter;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,10 +11,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.temasoundbar.MainActivity;
 import com.example.temasoundbar.R;
+import com.example.temasoundbar.services.ConstantsWorker;
+import com.example.temasoundbar.services.TemaOnCLickListener;
 
 public class ButtonAdapter extends RecyclerView.Adapter<ButtonAdapter.MyViewHolder>{
-    private String[][] dataset;
+    private int[][] id;
+    private String[] labels;
+    private Context context;
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
@@ -23,14 +29,16 @@ public class ButtonAdapter extends RecyclerView.Adapter<ButtonAdapter.MyViewHold
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             this.imageButton = itemView.findViewById(R.id.temaButton);
-            this.textView = itemView.findViewById(R.id.temaButtonText);
+            this.textView = itemView.findViewById(R.id.temaLabel);
         }
 
 
     }
 
-    public ButtonAdapter(String[][] dataset) {
-        this.dataset = dataset;
+    public ButtonAdapter(int[][] id, String[] labels,Context context) {
+        this.id = id;
+        this.labels = labels;
+        this.context = context;
     }
 
     @NonNull
@@ -42,13 +50,15 @@ public class ButtonAdapter extends RecyclerView.Adapter<ButtonAdapter.MyViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ButtonAdapter.MyViewHolder holder, int position) {
-        holder.textView.setText(dataset[position][0]);
-        holder.imageButton.setImageResource(Integer.parseInt(dataset[position][1]));
+        holder.textView.setText(labels[position]);
+        holder.imageButton.setImageResource(id[position][0]);
+        TemaOnCLickListener temaOnCLickListener = new TemaOnCLickListener(id[position][1],context);
+        holder.imageButton.setOnClickListener(temaOnCLickListener);
     }
 
     @Override
     public int getItemCount() {
 
-        return dataset.length;
+        return id.length;
     }
 }

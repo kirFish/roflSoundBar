@@ -5,7 +5,7 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name ="black">#191919</color>
-    <color name ="background">#454143</color>
-    <color name="textColor">#BF561D</color>
+    <color name ="background">#5C5959</color>
+    <color name="textColor">#E67956</color>
 
 </resources>
