@@ -3,9 +3,6 @@ package com.example.temasoundbar.services;
 import com.example.temasoundbar.R;
 
 public class ConstantsWorker {
-    
-    final private static int buttonsNumber = 23;
-    
 
     private static String[] buttonsNames = {"blyat.m4a",
             "die motherfucker.m4a", "eeeeee.m4a", "fuck.m4a",
@@ -18,14 +15,14 @@ public class ConstantsWorker {
             "tablyatski awaper.m4a", "ta yopto.m4a", "this is shit not a solution.m4a",
             "try rust.m4a", "understood.m4a", "what the fuck motherfucker.m4a",
             "ya poshel.m4a", "yes yes yes.m4a", "you bledina.m4a",
-            "you cant divide.m4a", "you were told to go.m4a", "you were told to go.m4a"};
+            "you cant divide.m4a", "you were told to go.m4a"};
 
 
 
     public static String[] getAllButtonsNames(){
-        String[] editedNames = new String[buttonsNumber];
+        String[] editedNames = new String[buttonsNames.length];
 
-        for (int i = 0; i < buttonsNumber; i++) {
+        for (int i = 0; i < buttonsNames.length; i++) {
             editedNames[i] = buttonsNames[i].replace(".m4a","");
         }
         return editedNames;
@@ -33,6 +30,8 @@ public class ConstantsWorker {
 
     private static int[] getId(int i) {
         switch (i) {
+            case 0:
+                return new int[]{R.drawable.tema11_button, R.raw.blyat};
             case 1:
                 return new int[]{R.drawable.tema1_button, R.raw.diemotherfucker};
             case 2:
@@ -77,19 +76,37 @@ public class ConstantsWorker {
                 return new int[]{R.drawable.tema10_button, R.raw.surrender};
             case 22:
                 return new int[]{R.drawable.tema11_button, R.raw.tablyatskiawaper};
-            default:
-                return new int[]{R.drawable.tema1_button, R.raw.blyat};
-
+            case 23:
+                return new int[]{R.drawable.tema1_button, R.raw.tayopto};
+            case 24:
+                return new int[]{R.drawable.tema2_button, R.raw.thisisshitnotasolution};
+            case 25:
+                return new int[]{R.drawable.tema3_button, R.raw.tryrust};
+            case 26:
+                return new int[]{R.drawable.tema4_button, R.raw.understood};
+            case 27:
+                return new int[]{R.drawable.tema5_button, R.raw.whatthefuckmotherfucker};
+            case 28:
+                 return new int[]{R.drawable.tema6_button, R.raw.yaposhel};
+            case 29:
+                return new int[]{R.drawable.tema7_button, R.raw.yesyesyes};
+            case 30:
+                return new int[]{R.drawable.tema8_button, R.raw.youbledina};
+            case 31:
+                return new int[]{R.drawable.tema9_button, R.raw.youcantdevide};
+            case 32:
+                return new int[]{R.drawable.tema10_button, R.raw.youweretoldtogo};
         }
 
+        return new int[]{0,0};
     }
 
     
     public static int[][] getIdArray(){
 
-        int[][] idArray = new int[buttonsNumber][2];
+        int[][] idArray = new int[buttonsNames.length][2];
 
-        for (int i = 0; i < buttonsNumber ;i++) {
+        for (int i = 0; i < buttonsNames.length ;i++) {
             idArray[i] = getId(i);
         }
 
